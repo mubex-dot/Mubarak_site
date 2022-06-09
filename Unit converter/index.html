@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top-half">
+      <h1 id="metric">Metric/Imperial unit conversion</h1>
+      <h1 id="figure">
+        <input
+          id="num-fig"
+          type="number"
+          placeholder="Number"
+          oninput="UnitConverter(this.value)"
+          onchange="UnitConverter(this.value)"
+        />
+      </h1>
+      <!-- <button id="reset-btn" onclick="reset()">RESET</button> -->
+    </div>
+    <div class="bottom-half">
+      <h3>Length (Meter/Feet)</h3>
+      <p id="length">
+        <span id="main-fig"></span> meters = <span id="feet"></span> feet |
+        <span id="main-fig"></span> feet = <span id="meters"></span> meters
+      </p>
+      <br />
+      <h3>Volume (Liters/Gallons)</h3>
+      <p id="volume">
+        <span id="main-fig"></span> liters = <span id="gallons"></span> gallons
+        | <span id="main-fig"></span> gallons = <span id="liters"></span> liters
+      </p>
+      <br />
+      <h3>Mass (Kilograms/Pounds)</h3>
+      <p id="mass">
+        <span id="main-fig"></span> kilos = <span id="pounds"></span> pounds |
+        <span id="main-fig"></span> pounds = <span id="kilos"></span> kilos
+      </p>
+      <br />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
